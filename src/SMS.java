@@ -1,7 +1,7 @@
 public class SMS implements Notificador{
 
     private String nome;
-    private double Numero;
+    private double numero;
 
 
     @Override
@@ -15,7 +15,7 @@ public class SMS implements Notificador{
     }
 
     public double getNumero() {
-        return Numero;
+        return numero;
     }
 
     public void setNome(String nome) {
@@ -23,14 +23,14 @@ public class SMS implements Notificador{
     }
 
     public void setNumero(double numero) {
-        Numero = numero;
+        this.numero = numero;
     }
 
     @Override
     public String toString() {
         return "SMS{" +
                 "nome='" + nome + '\'' +
-                ", Numero=" + Numero +
+                ", Numero=" + numero +
                 '}';
     }
 }

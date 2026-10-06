@@ -1,11 +1,9 @@
 void main() {
 
     Email email = new Email();
-    email.getNome();
-
-    email.setNome("Fernanda");
+    email.setNome(IO.readln("Digite seu nome: "));
+    email.setPara(IO.readln("Para: "));
     IO.println(email);
-
 
 
 
@@ -13,21 +11,17 @@ void main() {
 
 
 
-
-
-
     SMS sms = new SMS();
-    sms.getNome();
-    sms.setNome("Fernanda");
+
+
+    sms.setNome(IO.readln("Digite seu nome: "));
     IO.println(sms);
 
 
-    sms.getNumero();
-    sms.setNumero(1134567809);
+
+    sms.setNumero(Double.parseDouble(IO.readln("Digite seu número: ")));
     IO.println(sms);
     sms.Enviar("Estou mandando um SMS");
-
-
 
 
 }

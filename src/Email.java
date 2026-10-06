@@ -1,6 +1,7 @@
 public class Email implements Notificador{
 
     private String nome;
+    private String para;
 
 
     @Override
@@ -15,6 +16,14 @@ public class Email implements Notificador{
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getPara() {
+        return para;
+    }
+
+    public void setPara(String para) {
+        this.para = para;
     }
 
     @Override
